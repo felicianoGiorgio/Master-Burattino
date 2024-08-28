@@ -1,0 +1,30 @@
+[
+    {
+        "nome": "Mario Rossi",
+        "email": "mario.rossi@example.com",
+        "data": "2024-07-06",
+        "ora": "19:30",
+        "persone": 4
+    },
+    {
+        "nome": "Paolo Verdi",
+        "email": "paolo.verdi@example.com",
+        "data": "2024-07-07",
+        "ora": "20:00",
+        "persone": 2
+    },
+    {
+        "nome": "Giulia Bianchi",
+        "email": "giulia.bianchi@example.com",
+        "data": "2024-07-08",
+        "ora": "12:30",
+        "persone": 3
+    },
+    {
+        "nome": "dssds",
+        "email": "sadad@jij",
+        "data": "2024-07-06",
+        "ora": "17:22",
+        "persone": "1"
+    }
+]

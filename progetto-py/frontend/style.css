@@ -1,0 +1,317 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: white;
+  width: 100vw;
+  height: 2.5vh;
+  color: #333;
+  display: flex;
+  padding: 2em;
+  justify-content: space-between;
+  font-family: 'Lobster', cursive;
+}
+
+header > * {
+  align-self: center;
+}
+
+#logo {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 4em;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#intro-sec {
+  background-image: url("./assets/img1.jpg");
+  background-color: rgba(0, 0, 0, .5);
+  background-blend-mode: color;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  color: #ddd;
+  background-size: cover;
+}
+
+#intro-sec > div {
+  width: 50%;
+  min-width: 700px;
+  padding: 1em;
+  align-self: center;
+}
+
+p {
+  font-style: italic;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+main h1 {
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  width: 100vw;
+}
+
+#menu-sec {
+  background: linear-gradient(135deg, #ff6b6b, #e3bb6f);
+  color: white;
+  padding: 2em;
+}
+
+#menu-sec h1 {
+  text-transform: uppercase;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  max-width: 95vw;
+}
+
+#info-sec {
+  padding: 0 2em;
+}
+
+#info-sec p {
+  max-width: 95vw;
+}
+
+#info-sec address {
+  margin-top: 5em;
+}
+
+#booking-sec {
+  height: 50vh;
+  position: relative;
+}  
+
+#booking-sec a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em 2em;
+  border: none;
+  border-radius: 1em;
+  background: linear-gradient(135deg, #ff6b6b, #e3bb6f);
+  color: white;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
+}
+
+#booking-sec span {
+  transition: all .5s ease-in-out;
+}
+
+#booking-sec a:hover {
+  background: none;
+  background-color: white;
+  border: 1px solid #ff6b6b;
+}
+
+#booking-sec a:hover span {
+  background: linear-gradient(135deg, #ff6b6b, #e3bb6f);
+  color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+@media(max-width: 1000px) {
+  header {
+    font-size: 2em;
+  }
+  #logo {
+    font-size: 4em;
+  }
+  #intro-sec p {
+    font-size: 2rem;
+  }
+  #intro-sec h1 {
+    font-size: 4rem;
+  }
+  #menu-sec h1 {
+    font-size: 4rem;
+  }
+  #menu-sec span {
+    font-size: 2rem;
+  }
+  #booking-sec a {
+    padding: 2em 4em;
+  }
+  #booking-sec span {
+    font-size: 2rem;
+  }
+}
+
+/*form styling */
+form {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+form p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+} 
+
+form h2 {
+  color: #fff;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+input, select {
+  padding: 10px 15px;
+
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-color: #fff;
+  margin: 200px;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-image: url("./assets/images4.jpg");
+}
+
+
+.container-time {
+  background-color: rgba(0, 0, 0, .95);
+  padding: 50px;
+  outline: 3px dashed #998100;
+  outline-offset: -30px;
+  text-align: center;
+  color: #fff;
+}
+
+.heading {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.heading-days {
+  color: #998100;
+  font-size: 30px;
+}
+
+.container-form {
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #000;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, .95);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+/* Stili per la Navbar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Stile base per il bottone Cancella Prenotazione */
+button[type="button"] {
+  background-color: #333; /* Colore di sfondo nero */
+  color: white; /* Colore del testo bianco */
+  border: none; /* Nessun bordo */
+  padding: 10px 20px; /* Spaziatura interna */
+  text-align: center; /* Allineamento del testo */
+  text-decoration: none; /* Nessuna sottolineatura */
+  display: inline-block; /* Visualizzazione in linea */
+  font-size: 16px; /* Dimensione del font */
+  margin: 4px 2px; /* Margine */
+  cursor: pointer; /* Cursore a forma di mano */
+  border-radius: 4px; /* Bordi arrotondati */
+  transition: background-color 0.3s; /* Transizione per il cambio di colore */
+}
+
+/* Stile quando il cursore del mouse si avvicina al bottone */
+button[type="button"]:hover {
+  background-color: #000; /* Colore di sfondo nero più scuro */
+}

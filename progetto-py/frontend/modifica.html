@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modifica Prenotazione</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Sezione Navbar -->
+  <nav class="navbar">
+    <ul>
+      <!--Link per tornare alla pagina principale-->
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Form per la modifica e la cancellazione della prenotazione -->
+    <div class="container-form">
+      <form id="modificaForm" onsubmit="modificaPrenotazione(event)">
+        <h2>Modifica Prenotazione</h2>
+        
+        <div class="form-field">
+          <p>Nome</p>
+          <input type="text" placeholder="Nome" required>
+        </div>
+        <div class="form-field">
+          <p>Email</p>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-field">
+          <p>Data</p>
+          <input type="date" required>
+        </div>
+        <div class="form-field">
+          <p>Ora</p>
+          <input type="time" required>
+        </div>
+        <div class="form-field">
+          <p>N° persone?</p>
+          <select name="select" required>
+            <option value="1">1 persona</option>
+            <option value="2">2 persone</option>
+            <option value="3">3 persone</option>
+            <option value="4">4 persone</option>
+            <option value="5">5 persone</option>
+            <option value="5+">5+ persone</option>
+          </select>
+        </div>
+        <!-- Pulsanti per modificare e cancellare la prenotazione -->
+        <button class="btn" type="submit">Modifica</button>
+        <button type="button" onclick="cancellaPrenotazione(event)">Cancella Prenotazione</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
